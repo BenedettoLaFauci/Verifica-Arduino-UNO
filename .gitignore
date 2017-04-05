@@ -1,12 +1,21 @@
-*.class
+int k=0;
+int i=0;
+int j=0;
+void setup(){
+     Serial.begin(9600);
+}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+void loop(){
+while(i < 3000){
+ i=millis();
+ k=k+1;
+j=i*2;
+ Serial.print(k);
+ Serial.print(",");
+  Serial.print(i);
+ Serial.print(",");
+  Serial.println(j);
+delay(50);
+}
 
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+}
